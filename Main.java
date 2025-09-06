@@ -4,10 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Libro predeterminado
+
         Libro libro1 = new Libro("Cien años de soledad", "Gabriel García Márquez", 3, 0);
 
-        // Libro creado por el usuario (inicia nulo)
         Libro libro2 = null;
 
         int opcion;
@@ -20,8 +19,7 @@ public class Main {
             System.out.println("5. Salir");
             System.out.print("Elija una opción: ");
             opcion = sc.nextInt();
-            sc.nextLine(); // limpiar buffer
-
+            sc.nextLine();
             switch (opcion) {
                 case 1:
                     System.out.print("Ingrese título: ");
